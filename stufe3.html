@@ -1,0 +1,65 @@
+<!-- stufe3.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stufe 3 – Profi</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/questions.js"></script>
+  <script defer src="js/stage.js"></script>
+</head>
+<body class="arena arena-3">
+  <!-- Arena-Hintergrund -->
+  <div class="aura"></div>
+  <div class="rays"></div>
+  <div class="clouds"></div>
+
+  <main class="stage wrap fade-in">
+    <h1 class="title glow-strong">⚡ Stufe 3 – Das göttliche Turnier</h1>
+
+    <!-- Kurzinfo & Start -->
+    <section class="info card" id="stageInfo">
+      <h2>Politik und Komerziellisierung</h2>
+      <ul class="topics">
+        <p>Die Olympischen Spiele sind seit ihrer Wiedergeburt 1896 nicht nur ein sportliches, sondern auch ein politisches und wirtschaftliches Ereignis. Schon früh nutzten Staaten das große Medieninteresse, um ihre Macht und Ideologie zu zeigen. Ein bekanntes Beispiel sind die Spiele von Berlin 1936, bei denen das NS-Regime die Veranstaltung für Propaganda missbrauchte. Trotzdem wurde hier der afroamerikanische Athlet Jesse Owens mit vier Goldmedaillen zum Symbol gegen Rassismus. In den 1960er Jahren wurde Olympia erneut politisch: Bei den Spielen 1968 in Mexiko-Stadt zeigten zwei afroamerikanische Sportler auf dem Siegerpodest die Black-Power-Faust – ein Zeichen gegen Diskriminierung. Auch während des Kalten Krieges wurde der Sport zum politischen Spielfeld: 1980 boykottierten die USA und viele westliche Länder die Spiele in Moskau, weil die Sowjetunion Afghanistan angegriffen hatte. Als Antwort blieb die Sowjetunion 1984 den Spielen in Los Angeles fern. Neben der Politik spielt heute die Kommerzialisierung eine große Rolle. Die Spiele sind zu einem milliardenschweren Geschäft geworden. Früher wurden sie durch Eintrittsgelder und Spenden finanziert, heute stammen die meisten Einnahmen aus Werbung, Fernsehrechten und Sponsorenverträgen. Firmen wie Coca-Cola, Samsung oder Visa nutzen die weltweite Aufmerksamkeit, um ihre Marken zu bewerben. Dadurch können die Spiele professioneller organisiert werden, doch viele Kritiker sagen, der „Geist des Sports“ gehe dabei verloren. Auch die Medien haben den Charakter der Spiele verändert. Früher sah man Olympia nur in Zeitungen oder im Radio, heute wird alles in Echtzeit über soziale Netzwerke geteilt. Sportler werden zu Markenbotschaftern, und Influencer berichten live vom Geschehen. Das sorgt für mehr Reichweite, aber auch für eine starke Kommerzialisierung. Gleichzeitig sind die Kosten für Austragungsstädte enorm gestiegen. Neue Stadien, olympische Dörfer und Infrastruktur verschlingen Milliarden, die nach den Spielen oft ungenutzt bleiben. Deshalb fordern viele, Olympia nachhaltiger und bescheidener zu gestalten.Trotz all dieser Veränderungen bleibt der olympische Gedanke das Herz der Spiele: Menschen aus aller Welt sollen in Frieden, Fairness und Freundschaft zusammenkommen. Politik und Geld dürfen diesen Gedanken nicht verdrängen – denn letztlich sind es die Athleten und ihre Leistungen, die Olympia unvergesslich machen.
+
+
+</p>
+        
+      </ul>
+      <button class="btn" id="btnStartStage">Quiz starten</button>
+    </section>
+
+    <!-- Kampf-Arena -->
+    <section class="battle card">
+      <div class="hp-row">
+        <div class="hp">
+          <label>Held</label>
+          <div class="bar"><div id="hpHero" class="bar-inner green"></div></div>
+        </div>
+        <div class="hp">
+          <label>Boss: Zeus</label>
+          <div class="bar"><div id="hpBoss" class="bar-inner red"></div></div>
+        </div>
+      </div>
+
+      <div class="fighters">
+        <div class="hero" id="heroSVG"></div>
+        <div class="boss" id="bossSVG"></div>
+      </div>
+
+      <div id="arenaFX"></div>
+    </section>
+
+    <!-- Quizbereich -->
+    <section id="quizArea" class="card"></section>
+    <div id="stageResult" class="result"></div>
+
+    <div class="center mt">
+      <a class="btn ghost" href="index.html">Zurück</a>
+    </div>
+  </main>
+</body>
+</html>

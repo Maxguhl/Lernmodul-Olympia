@@ -1,0 +1,62 @@
+<!-- stufe2.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stufe 2 – Studierend</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/questions.js"></script>
+  <script defer src="js/stage.js"></script>
+</head>
+<body class="arena arena-2">
+  <!-- Arena-Hintergrund -->
+  <div class="aura"></div>
+  <div class="rays rays-slow"></div>
+  <div class="clouds"></div>
+
+  <main class="stage wrap fade-in">
+    <h1 class="title glow-strong">🏛️ Stufe 2 – Wissen vertiefen</h1>
+
+    <!-- Kurzinfo & Start -->
+    <section class="info card" id="stageInfo">
+      <h2>Doping und Skandale</h2>
+      <ul class="topics">
+        <p>Doping spielt bei den Olympischen Spielen seit vielen Jahren eine bedeutende Rolle. Dabei versuchen Athleten, ihre Leistung mit verbotenen Mitteln wie Anabolika, EPO oder Testosteron zu steigern. Erste Dopingfälle traten bereits in den 1960er-Jahren auf, besonders in Sportarten wie Leichtathletik oder Gewichtheben. Zu den bekanntesten Skandalen gehören der Fall des Sprinters Ben Johnson bei den Spielen 1988 in Seoul sowie das russische Staatsdoping, das ab 2014 aufgedeckt wurde. Um den fairen Wettbewerb zu schützen, führt das Internationale Olympische Komitee (IOC) gemeinsam mit der Welt-Anti-Doping-Agentur (WADA) strenge Kontrollen durch, bei denen Athleten regelmäßig Urin- und Blutproben abgeben müssen. Bei Verstößen drohen harte Strafen wie Sperren oder der Entzug von Medaillen. Ziel dieser Maßnahmen ist es, sauberen und fairen Sport zu gewährleisten und die olympischen Werte von Ehrlichkeit, Respekt und Fairness zu bewahren.</p>
+        
+      </ul>
+      <button class="btn" id="btnStartStage">Quiz starten</button>
+    </section>
+
+    <!-- Kampf-Arena -->
+    <section class="battle card">
+      <div class="hp-row">
+        <div class="hp">
+          <label>Held</label>
+          <div class="bar"><div id="hpHero" class="bar-inner green"></div></div>
+        </div>
+        <div class="hp">
+          <label>Boss: Poseidon</label>
+          <div class="bar"><div id="hpBoss" class="bar-inner red"></div></div>
+        </div>
+      </div>
+
+      <div class="fighters">
+        <div class="hero" id="heroSVG"></div>
+        <div class="boss" id="bossSVG"></div>
+      </div>
+
+      <div id="arenaFX"></div>
+    </section>
+
+    <!-- Quizbereich -->
+    <section id="quizArea" class="card"></section>
+    <div id="stageResult" class="result"></div>
+
+    <div class="center mt">
+      <a class="btn ghost" href="index.html">Zurück</a>
+    </div>
+  </main>
+</body>
+</html>

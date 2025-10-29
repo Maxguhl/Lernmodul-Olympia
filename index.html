@@ -1,0 +1,75 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Olympia RPG – Start</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/index.js"></script>
+</head>
+<body class="sky">
+  <!-- Epischer Hintergrund -->
+  <div class="aura"></div>
+  <div class="rays"></div>
+  <div class="clouds"></div>
+
+  <header class="wrap fade-in">
+    <h1 class="title glow-strong">⚡ Olympia Quest</h1>
+    <p class="subtitle">Lerne die Olympischen Spiele im epischen RPG-Stil – komplett offline.</p>
+  </header>
+
+  <main class="wrap">
+    <!-- Optionales lokales Video -->
+    <section class="upload-card card">
+      <h2>🎥 Optionales lokales Video</h2>
+      <p>Lade ein lokales Video für die Startseite (wird nur lokal angezeigt):</p>
+      <div class="upload-row">
+        <input type="file" id="videoUpload" accept="video/*"/>
+        <video id="preview" controls></video>
+      </div>
+    </section>
+
+    <!-- Stufen-Auswahl -->
+    <section class="levels">
+      <article class="level card">
+        <div class="level-header">
+          <div class="level-icon">🏺</div>
+          <h3>Anfänger</h3>
+        </div>
+        <p>Die Anfänge & Grundwissen</p>
+        <button class="btn" data-level="1">Starten</button>
+      </article>
+
+      <article class="level card locked">
+        <div class="level-header">
+          <div class="level-icon">🏛️</div>
+          <h3>Studierend</h3>
+        </div>
+        <p>Verbindungen & Technik</p>
+        <button class="btn" data-level="2">Freischalten im Tor 🔒</button>
+      </article>
+
+      <article class="level card locked">
+        <div class="level-header">
+          <div class="level-icon">⚡</div>
+          <h3>Profi</h3>
+        </div>
+        <p>Das göttliche Turnier</p>
+        <button class="btn" data-level="3">Freischalten im Tor 🔒</button>
+      </article>
+    </section>
+
+    <!-- Gate-Link -->
+    <section class="gate card">
+      <h2>🔱 Tor des Wissens</h2>
+      <p>Beweise dich im Gate-Quiz, um Stufe 2/3 zu öffnen.</p>
+      <a class="btn ghost" href="gate.html">Zum Tor</a>
+    </section>
+  </main>
+
+  <footer class="wrap tiny">
+    <p>Fortschritt wird im Browser (localStorage) gespeichert. Keine externen Dateien oder Frameworks.</p>
+  </footer>
+</body>
+</html>

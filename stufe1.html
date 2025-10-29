@@ -1,0 +1,64 @@
+<!-- stufe1.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stufe 1 – Anfänger</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/questions.js"></script>
+  <script defer src="js/stage.js"></script>
+</head>
+<body class="arena arena-1">
+  <!-- Epischer Arena-Hintergrund -->
+  <div class="aura"></div>
+  <div class="rays"></div>
+  <div class="clouds"></div>
+
+  <main class="stage wrap fade-in">
+    <h1 class="title glow-strong">🏺 Stufe 1 – Die Anfänge</h1>
+
+    <!-- Kurzinfo & Start -->
+    <section class="info card" id="stageInfo">
+      <h2>Sportarten und Rekorde</h2>
+      <ul class="topics">
+        <p>Die ersten antiken Olympischen Spiele fanden im Jahr 776 v. Chr. statt und wurden in der Stadt Olympia auf der Peloponnes in Griechenland ausgetragen. Diese Spiele waren ein religiöses Fest zu Ehren des Gottes Zeus und hatten eine große kulturelle und politische Bedeutung. Es durften nur freie griechische Männer teilnehmen – Frauen, Sklaven und Ausländer waren ausgeschlossen.
+Zu den Sportarten in der Antike gehörten Laufwettbewerbe, Ringen, Boxen, der Fünfkampf (Pentathlon), Diskuswerfen, Speerwerfen, Weitsprung und das gefährliche Wagenrennen. Die Sieger erhielten keinen Geldpreis, sondern einen Olivenkranz und ewige Ehre – Ruhm war der größte Lohn. Nach vielen Jahrhunderten des Vergessens wurden die Olympischen Spiele im Jahr 1896 in Athen wieder eingeführt. Der Begründer der modernen Spiele war der Franzose Pierre de Coubertin, der den olympischen Gedanken – „Dabei sein ist alles“ – verbreitete.Heute gibt es eine riesige Vielfalt an Sportarten, die es in der Antike nicht gab, wie zum Beispiel Schwimmen, Turnen, Basketball, Skateboarden, Snowboarden und Surfen. Moderne Athleten jagen Rekorde – so hält Usain Bolt aus Jamaika den olympischen Rekord über 100 Meter mit einer Zeit von 9,63 Sekunden (London 2012).Der erfolgreichste Olympiateilnehmer aller Zeiten ist der amerikanische Schwimmer Michael Phelps, der 28 Medaillengewann, davon 23 goldene.Während in der Antike nur Männer starten durften, sind die modernen Olympischen Spiele ein Symbol für Gleichberechtigung: Frauen und Männer treten heute in fast allen Disziplinen an, oft sogar gemeinsam in Mixed-Wettbewerben. Außerdem werden Dopingkontrollen und faire Wettkampfregeln streng überwacht – etwas, das es in der Antike nicht gab.Heute gelten die Olympischen Spiele als ein Zeichen für Frieden, Freundschaft und Völkerverständigung. Menschen aus aller Welt kommen zusammen, um sportlich gegeneinander anzutreten und gleichzeitig kulturell voneinander zu lernen – ein Erbe, das aus der Antike stammt und bis heute.
+</p>
+        
+      </ul>
+      <button class="btn" id="btnStartStage">Quiz starten</button>
+    </section>
+
+    <!-- Kampf-Arena (HP-Balken + Avatare) -->
+    <section class="battle card">
+      <div class="hp-row">
+        <div class="hp">
+          <label>Held</label>
+          <div class="bar"><div id="hpHero" class="bar-inner green"></div></div>
+        </div>
+        <div class="hp">
+          <label>Boss: Hera</label>
+          <div class="bar"><div id="hpBoss" class="bar-inner red"></div></div>
+        </div>
+      </div>
+
+      <div class="fighters">
+        <div class="hero" id="heroSVG"></div>
+        <div class="boss" id="bossSVG"></div>
+      </div>
+
+      <div id="arenaFX"></div>
+    </section>
+
+    <!-- Quizbereich + Ergebnis -->
+    <section id="quizArea" class="card"></section>
+    <div id="stageResult" class="result"></div>
+
+    <div class="center mt">
+      <a class="btn ghost" href="index.html">Zurück</a>
+    </div>
+  </main>
+</body>
+</html>
