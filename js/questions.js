@@ -10,8 +10,8 @@
         { id:'s1-3', type:'choice',     prompt:'Welche Sportarten gab es im antiken Griechenland?', options:['A) Fußball, Tennis und Schwimmen','B) Diskuswerfen, Ringen und Wagenrennen','C) Volleyball, Radfahren und Boxen'],answer:'B) Diskuswerfen, Ringen und Wagenrennen',  explain:'Richtig: B) Diskuswerfen, Ringen und Wagenrennen',
          },
         { id:'s1-4', type:'order',     inputMode:'drag', prompt:'Bringe die Ereignisse in Reihenfolge:',
-          items:['Antike beginnt','Verbot','Moderne starten','Erste Winterspiele'],
-          correctOrder:['Antike beginnt','Verbot','Moderne starten','Erste Winterspiele'],
+          items:['Spiele der Antike beginnen','Verbot der antiken Spiele','Spiele der Moderne starten','Erste Winterspiele der Moderne'],
+          correctOrder:['Spiele der Antike beginnen','Verbot der antiken Spiele','Spiele der Moderne starten','Erste Winterspiele der Moderne'],
           explain:'Antike → Verbot → Moderne → Winterspiele.' },
         { id:'s1-5', type:'speed',     subtype:'choice', timeLimitMs:7000,
           prompt:'Wie viele olympische Ringe?', options:['4','5','6'], answer:'5', explain:'Es sind fünf.' },
@@ -54,4 +54,5 @@
     window.STAGE_QUESTIONS = QUESTIONS;
     window.stageQuestions = QUESTIONS[STAGE] || QUESTIONS[1];
   })();
+
   
