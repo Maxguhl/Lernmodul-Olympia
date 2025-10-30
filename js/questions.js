@@ -4,146 +4,159 @@
 
 (function(){
   const QUESTIONS = {
+    // Stufe 1: Anspruchsvollere Fragen passend zur Antike/Moderne
     1: [
-      { id:'s1-1', type:'choice', 
-        prompt:'Welche Bedeutung hatten die antiken Olympischen Spiele ursprünglich?', 
+      { id:'s1-1', type:'choice',
+        prompt:'Welche Funktion hatten die antiken Olympischen Spiele vor allem für die griechischen Stadtstaaten?',
         options:[
-          'A) Ein friedlicher Wettstreit zu Ehren des Gottes Zeus',
-          'B) Ein militärisches Training der Stadtstaaten',
-          'C) Eine Feier zu Ehren von Alexander dem Großen'
+          'A) Ein religiöses Fest mit politischer und kultureller Bedeutung, das Gemeinschaft und Status stärkte',
+          'B) Ein rein sportlicher Wettkampf ohne gesellschaftliche Bedeutung',
+          'C) Eine jährliche Handelsmesse zur Vergabe von Ressourcen'
         ],
-        answer:'A) Ein friedlicher Wettstreit zu Ehren des Gottes Zeus',
-        explain:'Richtig: Die Spiele waren ein religiöses Fest zu Ehren von Zeus, dem höchsten griechischen Gott.' },
+        answer:'A) Ein religiöses Fest mit politischer und kultureller Bedeutung, das Gemeinschaft und Status stärkte',
+        explain:'Richtig: Die Spiele waren religiös (Zeus) und hatten zugleich politische und kulturelle Bedeutung – Prestige, Bündnisse und Ruhm.' },
 
-      { id:'s1-2', type:'choice', 
-        prompt:'Wer durfte im antiken Griechenland an den Olympischen Spielen teilnehmen?', 
+      { id:'s1-2', type:'choice',
+        prompt:'Welche Aussage zur Teilnahme an den antiken Spielen ist korrekt?',
         options:[
-          'A) Alle Männer und Frauen Griechenlands',
-          'B) Nur freie griechische Männer',
-          'C) Auch Sklaven und Ausländer, wenn sie trainiert waren'
+          'A) Alle freien und nichtfreien Einwohner Griechenlands durften antreten',
+          'B) Teilnahme war ausschließlich freien griechischen Männern vorbehalten; Frauen, Sklaven und Fremde waren ausgeschlossen',
+          'C) Nur Herrscherfamilien durften teilnehmen'
         ],
-        answer:'B) Nur freie griechische Männer',
-        explain:'Richtig: Frauen, Sklaven und Ausländer waren ausgeschlossen – teilnehmen durften nur freie griechische Männer.' },
+        answer:'B) Teilnahme war ausschließlich freien griechischen Männern vorbehalten; Frauen, Sklaven und Fremde waren ausgeschlossen',
+        explain:'Richtig: Die Teilnahme war stark ethnisch-sozial beschränkt – kein Zugang für Frauen, Sklaven oder Ausländer.' },
 
-      { id:'s1-3', type:'multiselect', 
-        prompt:'Welche Disziplinen gehörten zu den antiken Olympischen Spielen? (Mehrfachauswahl)', 
+      { id:'s1-3', type:'multiselect',
+        prompt:'Welche fünf Disziplinen gehören historisch zum antiken Pentathlon (Fünfkampf)? (Mehrfachauswahl)',
         options:[
-          'A) Diskuswerfen',
-          'B) Speerwerfen',
-          'C) Wagenrennen',
-          'D) Schwimmen'
+          'A) Stadionlauf (Kurzstrecke)',
+          'B) Weitsprung',
+          'C) Diskuswurf',
+          'D) Speerwurf',
+          'E) Ringen',
+          'F) Schwimmen'
         ],
-        answer:['A) Diskuswerfen','B) Speerwerfen','C) Wagenrennen'],
-        explain:'Richtig: Diskuswerfen, Speerwerfen und Wagenrennen gehörten zu den Disziplinen der Antike – Schwimmen nicht.' },
+        answer:['A) Stadionlauf (Kurzstrecke)','B) Weitsprung','C) Diskuswurf','D) Speerwurf','E) Ringen'],
+        explain:'Richtig: Pentathlon bestand aus Stadionlauf, Weitsprung, Diskus, Speer und Ringen; Schwimmen war nicht Bestandteil.' },
 
-      { id:'s1-4', type:'choice', 
-        prompt:'Was erhielten die Sieger der antiken Olympischen Spiele als Preis?', 
+      { id:'s1-4', type:'choice',
+        prompt:'Weshalb galt der Olivenkranz (kotinos) in der Antike als besonders erstrebenswerter Preis?',
         options:[
-          'A) Einen Olivenkranz und Ehre',
-          'B) Eine Goldmedaille',
-          'C) Eine Statue aus Bronze'
+          'A) Er war teuer und konnte verkauft werden',
+          'B) Er symbolisierte Ruhm, Ehrenstatus und religiöse Anerkennung, wichtiger als materielle Belohnung',
+          'C) Er berechtigte zur Steuerbefreiung'
         ],
-        answer:'A) Einen Olivenkranz und Ehre',
-        explain:'Richtig: Geld- oder Sachpreise gab es nicht – Ruhm und ein Olivenkranz galten als höchste Auszeichnung.' },
+        answer:'B) Er symbolisierte Ruhm, Ehrenstatus und religiöse Anerkennung, wichtiger als materielle Belohnung',
+        explain:'Richtig: Der Kranz war Sinnbild für Ehre und Ruhm; Geldpreise spielten keine Rolle.' },
 
-      { id:'s1-5', type:'order', inputMode:'drag', 
-        prompt:'Bringe die Ereignisse in die richtige zeitliche Reihenfolge:',
+      { id:'s1-5', type:'order', inputMode:'drag',
+        prompt:'Ordne diese Phasen der olympischen Geschichte chronologisch:',
         items:[
-          'Verbot der antiken Spiele durch das Römische Reich',
-          'Erste Olympische Spiele der Antike',
-          'Wiederbelebung der Spiele durch Pierre de Coubertin',
-          'Erste Olympische Winterspiele'
+          'Wiederbelebung der Spiele 1896 durch Pierre de Coubertin',
+          'Ende/Verbot der antiken Spiele (spätrömische Zeit)',
+          'Erste Olympischen Spiele der Antike (776 v. Chr.)',
+          'Einführung der Olympischen Winterspiele in der Neuzeit'
         ],
         correctOrder:[
-          'Erste Olympische Spiele der Antike',
-          'Verbot der antiken Spiele durch das Römische Reich',
-          'Wiederbelebung der Spiele durch Pierre de Coubertin',
-          'Erste Olympische Winterspiele'
+          'Erste Olympischen Spiele der Antike (776 v. Chr.)',
+          'Ende/Verbot der antiken Spiele (spätrömische Zeit)',
+          'Wiederbelebung der Spiele 1896 durch Pierre de Coubertin',
+          'Einführung der Olympischen Winterspiele in der Neuzeit'
         ],
-        explain:'Reihenfolge: Antike → Verbot → Moderne Wiederbelebung → Winterspiele.' },
+        explain:'Richtig: Antike → Verbot/Ende → Wiederbelebung 1896 → erste Winterspiele (20. Jh.).' },
 
-      { id:'s1-6', type:'choice', 
-        prompt:'Wie unterschied sich das olympische Ideal der Antike vom Ideal der Moderne?', 
+      { id:'s1-6', type:'choice',
+        prompt:'In welchem grundlegenden Punkt unterscheiden sich antikes und modernes olympisches Ideal heute am deutlichsten?',
         options:[
-          'A) In der Antike ging es um Ruhm und Ehre, heute um Fairness und Frieden.',
-          'B) In der Antike ging es um Geld, heute um Religion.',
-          'C) Beide verfolgten dasselbe Ziel: politische Macht.'
+          'A) Antike fokussierte Ruhm einzelner Athleten; moderne Spiele betonen Gleichberechtigung, Fairness und internationale Verständigung',
+          'B) Antike legte den Schwerpunkt auf Medienpräsenz; moderne Spiele sind primär religiös',
+          'C) Beide Epochen hatten identische Werte und organisatorische Strukturen'
         ],
-        answer:'A) In der Antike ging es um Ruhm und Ehre, heute um Fairness und Frieden.',
-        explain:'Richtig: Der Fokus verlagerte sich – vom persönlichen Ruhm hin zu internationaler Verständigung und Fairness.' }
+        answer:'A) Antike fokussierte Ruhm einzelner Athleten; moderne Spiele betonen Gleichberechtigung, Fairness und internationale Verständigung',
+        explain:'Richtig: Während Ruhm im Vordergrund stand, sind moderne Ideale Gleichberechtigung, Fairness, Anti-Doping und internationale Verständigung.' }
     ],
 
+    // Stufe 2: Doping — sachlich & ethisch anspruchsvoll
     2: [
-      { id:'s2-1', type:'multiselect', 
-        prompt:'Welche Substanzen werden häufig beim Doping eingesetzt, um die Leistung zu steigern?', 
-        options:['A) Vitamine','B) Anabolika','C) Erythropoetin (EPO)','D) Mineralwasser'], 
-        answer:['B) Anabolika','C) Erythropoetin (EPO)'], 
-        explain:'Richtig: B) Anabolika fördern den Muskelaufbau, C) EPO steigert die Sauerstoffaufnahme des Blutes.' },
+      { id:'s2-1', type:'multiselect',
+        prompt:'Welche Substanzen werden häufig beim Doping eingesetzt, um die Leistung zu steigern?',
+        options:['A) Vitamine','B) Anabolika','C) Erythropoetin (EPO)','D) Mineralwasser'],
+        answer:['B) Anabolika','C) Erythropoetin (EPO)'],
+        explain:'Richtig: Anabolika fördern Muskelaufbau; EPO erhöht die Sauerstofftransportkapazität des Blutes.' },
 
-      { id:'s2-2', type:'choice', 
-        prompt:'Was ist das Hauptziel der Anti-Doping-Maßnahmen?', 
+      { id:'s2-2', type:'choice',
+        prompt:'Was ist das Hauptziel der Anti-Doping-Maßnahmen?',
         options:['A) Geld sparen','B) Athletinnen und Athleten schützen und Fairness sichern','C) Mehr Medaillen verleihen','D) Zuschauer unterhalten'],
-        answer:'B) Athletinnen und Athleten schützen und Fairness sichern', 
-        explain:'Richtig: Anti-Doping-Maßnahmen sollen Gesundheit und Chancengleichheit gewährleisten.' },
+        answer:'B) Athletinnen und Athleten schützen und Fairness sichern',
+        explain:'Richtig: Schutz der Gesundheit und Chancengleichheit sind Kernziele von WADA & Co.' },
 
-      { id:'s2-3', type:'choice', 
-        prompt:'In welchen Sportarten treten Dopingfälle besonders häufig auf?', 
-        options:['A) Schach und Golf','B) Leichtathletik und Gewichtheben','C) Eishockey und Curling','D) Turnen und Tanzsport'],
-        answer:'B) Leichtathletik und Gewichtheben', 
-        explain:'Richtig: B) Leichtathletik und Gewichtheben – hier wurden viele Dopingfälle dokumentiert.' },
+      { id:'s2-3', type:'choice',
+        prompt:'Welche Rolle spielt die WADA (Welt-Anti-Doping-Agentur)?',
+        options:['A) Erfindung neuer Leistungsenhancer','B) Erstellung der Verbotsliste, Koordination von Tests und Sanktionen','C) Finanzierung von Sportlern'],
+        answer:'B) Erstellung der Verbotsliste, Koordination von Tests und Sanktionen',
+        explain:'Richtig: WADA erstellt die Prohibited List und koordiniert Anti-Doping-Maßnahmen international.' },
 
-      { id:'s2-4', type:'truefalse', 
-        prompt:'Sind das Internationale Olympische Komitee (IOC) und die Welt-Anti-Doping-Agentur (WADA) Organisationen, die Doping bekämpfen?', 
-        answer:true, 
-        explain:'Ja, beide setzen sich für sauberen Sport und gegen Doping ein.' },
+      { id:'s2-4', type:'truefalse',
+        prompt:'Doping ist nur deshalb verboten, weil es unfair ist — gesundheitliche Folgen sind irrelevant.',
+        answer:false,
+        explain:'Falsch: Doping ist verboten wegen Unfairness und wegen erheblicher gesundheitlicher Risiken.' },
 
-      { id:'s2-5', type:'choice', 
-        prompt:'Was bedeutet das olympische Motto „Citius, Altius, Fortius“?', 
-        options:['A) Schneller, höher, stärker','B) Größer, weiter, fairer','C) Härter, schneller, länger'], 
-        answer:'A) Schneller, höher, stärker', 
-        explain:'Richtig: „Citius, Altius, Fortius“ ist Latein für „Schneller, höher, stärker“.' },
+      { id:'s2-5', type:'choice',
+        prompt:'Welches ethische Problem entsteht, wenn Trainer oder Ärzte Athleten zu Doping anstiften?',
+        options:[
+          'A) Keine, weil Sportler selbst entscheiden',
+          'B) Ein Vertrauens- und Verantwortungsbruch gegenüber der Fürsorgepflicht',
+          'C) Nur ein legales Problem'
+        ],
+        answer:'B) Ein Vertrauens- und Verantwortungsbruch gegenüber der Fürsorgepflicht',
+        explain:'Richtig: Trainer/Ärzte verletzen ihre Fürsorgepflicht und gefährden Athleten aktiv.' },
 
-      { id:'s2-6', type:'speed', subtype:'choice', timeLimitMs:6000, 
-        prompt:'Wo fanden 1924 die ersten Olympischen Winterspiele statt?', 
-        options:['Chamonix','St. Moritz','Oslo'], 
-        answer:'Chamonix', 
-        explain:'Richtig: 1924 in Chamonix (Frankreich).' }
+      { id:'s2-6', type:'speed', subtype:'choice', timeLimitMs:6000,
+        prompt:'Welche Methode gehört NICHT zu üblichen Anti-Doping-Tests?',
+        options:['Urintest','Blutprobe','DNA-Sequenzierung auf Muskelstruktur'],
+        answer:'DNA-Sequenzierung auf Muskelstruktur',
+        explain:'Richtig: Urin- und Bluttests sind typisch; DNA-Sequenzierung wird nicht routinemäßig für Dopingtests genutzt.' }
     ],
 
+    // Stufe 3: Politik, Kommerz, Inklusion — anspruchsvolle Fragestellungen
     3: [
-      { id:'s3-1', type:'choice', 
-        prompt:'Wann wurden die Olympischen Spiele erstmals politisch missbraucht?', 
-        options:['A) 1896','B) 1936','C) 1968','D) 2000'], 
-        answer:'B) 1936', 
-        explain:'Richtig: 1936 – die Spiele in Berlin wurden von der NS-Diktatur für Propagandazwecke missbraucht.' },
+      { id:'s3-1', type:'choice',
+        prompt:'Warum gelten die Olympischen Spiele oft als politisch aufgeladen?',
+        options:['A) Weil sie geografisch zentral stattfinden','B) Wegen Boykotten, Propaganda und nationaler Selbstdarstellung','C) Weil nur eine Sportart gezeigt wird'],
+        answer:'B) Wegen Boykotten, Propaganda und nationaler Selbstdarstellung',
+        explain:'Richtig: Historische Beispiele (1936, 1968, 1980) zeigen politische Nutzung der Spiele.' },
 
-      { id:'s3-2', type:'choice', 
-        prompt:'Warum boykottierten viele Staaten die Olympischen Spiele 1980 in Moskau?', 
-        options:['A) Wegen des sowjetischen Einmarschs in Afghanistan','B) Wegen zahlreicher Dopingfälle','C) Wegen Umweltproblemen'], 
-        answer:'A) Wegen des sowjetischen Einmarschs in Afghanistan', 
-        explain:'Richtig: A) Der Boykott war eine Reaktion auf den sowjetischen Angriff auf Afghanistan.' },
+      { id:'s3-2', type:'choice',
+        prompt:'Welches Problem entsteht durch starke Kommerzialisierung der Spiele?',
+        options:[
+          'A) Geringere Medienpräsenz',
+          'B) Verschiebung des Fokus von sportlicher Fairness hin zu Profitinteressen',
+          'C) Weniger Zuschauer'
+        ],
+        answer:'B) Verschiebung des Fokus von sportlicher Fairness hin zu Profitinteressen',
+        explain:'Richtig: Sponsoring und TV-Rechte können sportliche Prioritäten verändern.' },
 
-      { id:'s3-3', type:'multiselect', 
-        prompt:'Welche Unternehmen gehören zu den offiziellen weltweiten Olympia-Partnern?', 
-        options:['Coca-Cola','Samsung','Visa','Sparkasse Meißen'], 
-        answer:['Coca-Cola','Samsung','Visa'], 
-        explain:'Richtig: Große internationale Marken wie Coca-Cola, Samsung und Visa sind Partner des IOC.' },
+      { id:'s3-3', type:'multiselect',
+        prompt:'Welche Maßnahmen fördern die Inklusion bei internationalen Spielen? (Mehrfachauswahl)',
+        options:['A) Einführung von Paralympics','B) Einführung gemischter Wettbewerbe (Mixed)','C) Ausschluss kleiner Nationen','D) Barrierefreie Infrastruktur'],
+        answer:['A) Einführung von Paralympics','B) Einführung gemischter Wettbewerbe (Mixed)','D) Barrierefreie Infrastruktur'],
+        explain:'Richtig: Paralympics, Mixed-Events und barrierefreie Infrastruktur fördern Inklusion.' },
 
-      { id:'s3-4', type:'order', inputMode:'drag', 
-        prompt:'Ordne die Austragungsorte dieser Olympischen Spiele in die richtige chronologische Reihenfolge:', 
-        items:['Mexiko-Stadt','Berlin','Los Angeles','Moskau'], 
-        correctOrder:['Berlin','Mexiko-Stadt','Moskau','Los Angeles'], 
-        explain:'Berlin 1936 – NS-Propaganda; Mexiko-Stadt 1968 – Black-Power-Protest; Moskau 1980 – Boykott der USA; Los Angeles 1984 – Boykott der Sowjetunion.' },
+      { id:'s3-4', type:'order', inputMode:'drag',
+        prompt:'Ordne die historischen Ereignisse nach ihrem Jahr (ältestes zuerst):',
+        items:['Los Angeles (1984) – sowjetischer Boykott','Berlin (1936) – NS-Propaganda','Mexiko-Stadt (1968) – Black-Power-Protest','Moskau (1980) – US-Boykott'],
+        correctOrder:['Berlin (1936) – NS-Propaganda','Mexiko-Stadt (1968) – Black-Power-Protest','Moskau (1980) – US-Boykott','Los Angeles (1984) – sowjetischer Boykott'],
+        explain:'Richtig: 1936 → 1968 → 1980 → 1984.' },
 
-      { id:'s3-5', type:'truefalse', 
-        prompt:'Wurden Olympische Spiele während der Weltkriege ausgesetzt?', 
-        answer:true, 
-        explain:'Ja, während beider Weltkriege fanden keine Olympischen Spiele statt.' },
+      { id:'s3-5', type:'truefalse',
+        prompt:'Technologische Neuerungen (Zeitmessung, Materialien) haben keinen Einfluss auf die Rekordentwicklung.',
+        answer:false,
+        explain:'Falsch: Technik führt zu besseren Bedingungen und häufig zu schnelleren/effizienteren Leistungen.' },
 
-      { id:'s3-6', type:'speed', subtype:'truefalse', timeLimitMs:6000, 
-        prompt:'Ringen ist keine olympische Sportart.', 
-        answer:false, 
-        explain:'Falsch – Ringen ist eine der ältesten olympischen Disziplinen.' }
+      { id:'s3-6', type:'speed', subtype:'truefalse', timeLimitMs:6000,
+        prompt:'Olympische Spiele und Paralympics sind vollständig voneinander unabhängig und haben nie Einfluss aufeinander.',
+        answer:false,
+        explain:'Falsch: Paralympics und Olympische Spiele beeinflussen sich in Bereichen wie Infrastruktur, Öffentlichkeit und Inklusion.' }
     ]
   };
 
